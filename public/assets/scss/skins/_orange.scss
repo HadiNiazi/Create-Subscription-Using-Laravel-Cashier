@@ -1,0 +1,124 @@
+﻿$white: #ffffff;
+$blue-grey-700: #455a64 !default;
+$blue-grey-900: #263238 !default;
+$orange-300: #ffb74d !default;
+$orange-400: #ffa726 !default;
+$orange-500: #ff9800 !default;
+$orange-600: #fb8c00 !default;
+$orange-700: #f57c00 !default;
+
+
+
+.theme-orange .profile-page .profile-sub-header .box-list ul li a:hover,
+.theme-orange .menu > ul > li > ul.normal-sub > li a:hover,
+.theme-orange .menu > ul > li > ul > li > ul > li a:hover {
+  background-color: $orange-500;
+}
+
+.theme-orange{
+
+    .navbar-brand {
+        color: $orange-500 !important;
+
+        &:hover, &:active, &:focus {
+            color: $orange-500;
+        }
+    }
+
+    .navbar{
+        background: linear-gradient(45deg, $orange-300, $orange-400);
+    }
+
+    .nav{
+        > li{
+            > a {
+                color:$white;
+
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .open{
+            > a {
+                background-color: transparent;
+
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color:$white;
+    }
+
+    .sidebar{
+        .menu{
+            .list{
+                li.active {
+                    background-color: transparent;
+
+                    >:first-child{
+
+                        i, span{
+                            color:$orange-500;
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        color:$orange-500;
+                    }
+                }
+            }
+        }
+    }
+    .checkbox input[type="checkbox"]:checked+label::after{
+        border: 1px solid $orange-500;
+    }
+
+    .inbox-widget{
+        .inbox-inner{
+            &:hover{
+                .inbox-img{
+                    img {
+                        border: 2px solid $orange-500;
+                        transition: all 150ms linear;
+                    }
+                }
+            }
+        }
+    }   
+   
+    .nav-tabs{
+        .nav-link.active {
+            border: 1px solid $orange-500;
+        }
+    }
+
+    .card{
+        .header{
+            h2{
+                &:before{
+                    background: $orange-500;
+                }
+                strong{
+                    color: $blue-grey-700;
+                }
+            }
+        }
+    }
+
+    .blog-page{
+        .single-blog-post{
+            .img-holder{
+                .date-box{
+                    background-color:$orange-500;
+                }
+            }
+        }
+    }
+}

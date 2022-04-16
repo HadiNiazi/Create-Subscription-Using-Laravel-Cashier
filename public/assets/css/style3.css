@@ -1,0 +1,118 @@
+.info-section {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info-list {
+    margin: 0px !important;
+    padding: 0 !important;
+}
+
+.info-list li {
+    margin: 10px 0px;
+}
+
+.info-list li h5 {
+    font-size: 14px;
+}
+
+.info-list li p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.col-border {
+    border-right: 1px solid #ccc;
+}
+
+.col-border2 {
+    border-top: 1px solid #ccc;
+}
+
+.table1-btn a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.table-heading {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    font-size: 16px;
+    font-weight: 700;
+    color: #00acc1;
+}
+
+td {
+    font-size: 16px;
+    font-size: 400;
+}
+
+.table1-btn a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #00acc1;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.back-btn {
+    background-color: #00acc1;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 7px 30px;
+    font-weight: 600
+}
+
+.back-btn:hover {
+    background-color: #00acc1;
+    color: white;
+
+}
+
+.border-0 {
+    border: 0px solid white;
+}
+
+.border-0:focus {
+    border: 0px solid white;
+    outline: none;
+}
+/* horses */
+.text-value{
+    width: 80px;
+}
+.names-list{
+    border: 1px solid #ccc;
+    padding: 10px !important;
+    border-radius: 5px ;
+  
+}
+.heading6{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 767px) {
+    .first-line{
+        flex-direction: column !important;
+    }
+  }

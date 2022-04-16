@@ -1,0 +1,121 @@
+﻿$white: #ffffff;
+$blue-grey-900: #263238 !default;
+$green-300: #90e878 !default;
+$green-400: #66bb6a !default;
+$green-500: #4CAF50 !default;
+$green-600: #43a047 !default;
+$green-900: #1b5e20 !default;
+
+.theme-green .profile-page .profile-sub-header .box-list ul li a:hover,
+.theme-green .menu > ul > li > ul.normal-sub > li a:hover,
+.theme-green .menu > ul > li > ul > li > ul > li a:hover {
+  background-color: $green-500;
+}
+
+.theme-green{
+
+    .navbar-brand {
+        color: $green-500 !important;
+
+        &:hover, &:active, &:focus {
+            color: $green-500;
+        }
+    }
+
+    .navbar{
+        background: linear-gradient(45deg, $green-400, $green-500);
+    }
+
+    .nav{
+        > li{
+            > a {
+                color:$white;
+
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .open{
+            > a {
+                background-color: transparent;
+
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color:$white;
+    }
+
+    .sidebar{
+        .menu{
+            .list{
+                li.active {
+                    background-color: transparent;
+
+                    >:first-child{
+
+                        i, span{
+                            color:$green-500;
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        color:$green-500;
+                    }
+                }
+            }
+        }
+    }
+    .checkbox input[type="checkbox"]:checked+label::after{
+        border: 1px solid $green-500;
+    }
+
+    .inbox-widget{
+        .inbox-inner{
+            &:hover{
+                .inbox-img{
+                    img {
+                        border: 2px solid $green-500;
+                        transition: all 150ms linear;
+                    }
+                }
+            }
+        }
+    }
+   
+    .nav-tabs{
+        .nav-link.active {
+            border: 1px solid $green-500 !important;
+        }
+    }
+
+    .card{
+        .header{
+            h2{
+                &:before{
+                    background: $green-600;
+                }
+                strong{
+                    color: $green-600;
+                }
+            }
+        }
+    }
+
+    .blog-page{
+        .single-blog-post{
+            .img-holder{
+                .date-box{
+                    background-color:$green-500;
+                }
+            }
+        }
+    }
+}

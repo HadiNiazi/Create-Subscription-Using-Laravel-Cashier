@@ -1,0 +1,121 @@
+﻿$white: #ffffff;
+$cyan-500: #00bcd4 !default;
+$cyan-600: #00acc1 !default;
+$cyan-700: #0097a7 !default;
+
+.theme-cyan .profile-page .profile-sub-header .box-list ul li a:hover,
+.theme-cyan .menu > ul > li > ul.normal-sub > li a:hover,
+.theme-cyan .menu > ul > li > ul > li > ul > li a:hover {
+  background-color: $cyan-500;
+}
+
+.theme-cyan{
+
+    .navbar-brand {
+        color: $cyan-500 !important;
+
+        &:hover, &:active, &:focus {
+            color: $cyan-500;
+        }
+    }
+
+    .navbar{
+        background: linear-gradient(45deg, #49cdd0, $cyan-500);
+    }
+
+    .nav{
+        > li{
+            > a {
+                color:$white;
+
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .open{
+            > a {
+                background-color: transparent;
+
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color:$white;
+    }
+
+    .sidebar{
+        .menu{
+            .list{
+                li.active {
+                    background-color: transparent;
+
+                    >:first-child{
+
+                        i, span{
+                            color:$cyan-500;
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        color:$cyan-500;
+                    }
+                }
+            }
+        }
+    }
+    .checkbox input[type="checkbox"]:checked+label::after{
+        border: 1px solid $cyan-500;
+    }
+
+    .inbox-widget{
+        .inbox-inner{
+            &:hover{
+                .inbox-img{
+                    img {
+                        border: 2px solid $cyan-500;
+                        transition: all 150ms linear;
+                    }
+                }
+            }
+        }
+    }
+   
+    .nav-tabs{
+        .nav-link.active {
+            border: 1px solid $cyan-500 !important;
+        }
+    }
+
+    .card{
+        .header{
+            h2{
+                &:before{
+                    background: $cyan-600;
+                }
+                strong{
+                    color: $cyan-600;
+                }
+            }
+        }
+    }
+
+    .blog-page{
+        .single-blog-post{
+            .img-holder{
+                .date-box{
+                    background-color:$cyan-500;
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,123 @@
+﻿$white: #ffffff;
+$blue-300: #64b5f6 !default;
+$blue-400: #42a5f5 !default;
+$blue-500: #2196f3 !default;
+$blue-600: #1e88e5 !default;
+$blue-700: #1976d2 !default;
+
+.theme-blue .profile-page .profile-sub-header .box-list ul li a:hover,
+.theme-blue .menu > ul > li > ul.normal-sub > li a:hover,
+.theme-blue .menu > ul > li > ul > li > ul > li a:hover {
+  background-color: $blue-500;
+}
+
+.theme-blue{
+
+    .navbar-brand {
+        color: $blue-500 !important;
+
+        &:hover, &:active, &:focus {
+            color: $blue-500;
+        }
+    }
+
+    .navbar{
+        background: linear-gradient(45deg, $blue-300, $blue-400);
+    }
+
+    .nav{
+        > li{
+            > a {
+                color:$white;
+
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .open{
+            > a {
+                background-color: transparent;
+
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color:$white;
+    }
+
+    .sidebar{
+        .menu{
+            .list{
+                li.active {
+                    background-color: transparent;
+
+                    >:first-child{
+
+                        i, span{
+                            color:$blue-500;
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        color:$blue-500;
+                    }
+                }
+            }
+        }
+    }
+    .checkbox input[type="checkbox"]:checked+label::after{
+        border: 1px solid $blue-500;
+    }
+
+    .inbox-widget{
+        .inbox-inner{
+            &:hover{
+                .inbox-img{
+                    img {
+                        border: 2px solid $blue-500;
+                        transition: all 150ms linear;
+                    }
+                }
+            }
+        }
+    }
+   
+    .nav-tabs{
+        .nav-link.active {
+            border: 1px solid $blue-500 !important;
+        }
+    }
+
+    .card{
+        .header{
+            h2{
+                &:before{
+                    background: $blue-600;
+                }
+                strong{
+                    color: $blue-600;
+                }
+            }
+        }
+    }
+
+    .blog-page{
+        .single-blog-post{
+            .img-holder{
+                .date-box{
+                    background-color:$blue-500;
+                }
+            }
+        }
+    }
+}
+
+
+
