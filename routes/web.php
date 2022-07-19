@@ -35,3 +35,5 @@ Route::get('plans/checkout/{planId}', [SubscriptionController::class, 'checkout'
 Route::post('plans/process', [SubscriptionController::class, 'processPlan'])->name('plan.process');
 
 Route::get('subscriptions/all', [SubscriptionController::class, 'allSubscriptions'])->name('subscriptions.all');
+Route::get('subscriptions/cancel', [SubscriptionController::class, 'cancelSubscriptions'])->name('subscriptions.cancel');
+Route::get('subscriptions/resume', [SubscriptionController::class, 'resumeSubscriptions'])->name('subscriptions.resume');

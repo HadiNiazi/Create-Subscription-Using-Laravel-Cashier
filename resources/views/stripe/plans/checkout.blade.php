@@ -40,7 +40,7 @@
 
                     <form action="{{ route('plan.process') }}" method="POST" id="subscribe-form">
                         @csrf
-                        <span><b>Your Subscription is </b> {{ strtoupper($plan->name) }}</span> <span style="float: right"> £{{ $plan->price }}</span> <br>
+                        <span><b>Your Subscription is </b> {{ strtoupper($plan->name) }}</span> <span style="float: right"> £{{ $plan->price/100 }}</span> <br>
 
                         <input type="hidden" name="plan_id" value="{{ $plan->plan_id }}">
                         <label for="card-holder-name">Card Holder Name</label> <br>

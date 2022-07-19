@@ -40,7 +40,6 @@ class SubscriptionController extends Controller
                 'interval_count' => $plan->interval_count
             ]);
 
-
         }
         catch(Exception $ex){
             dd($ex->getMessage());
@@ -83,7 +82,7 @@ class SubscriptionController extends Controller
         try {
             $user->newSubscription(
                 'default', $plan
-            )->trialDays(30)->create( $paymentMethod != null ? $paymentMethod->id: '');
+            )->create( $paymentMethod != null ? $paymentMethod->id: '');
         }
         catch(Exception $ex){
             return back()->withErrors([
@@ -101,5 +100,23 @@ class SubscriptionController extends Controller
         }
         $subscriptions = Subscription::where('user_id', auth()->id())->get();
         return view('stripe.subscriptions.index', compact('subscriptions'));
+    }
+    public function cancelSubscriptions(Request $request)
+    {
+        $subscriptionName = $request->subscriptionName;
+        if($subscriptionName){
+            $user = auth()->user();
+            $user->subscription($subscriptionName)->cancel();
+            return 'subsc is canceled';
+        }
+    }
+    public function resumeSubscriptions(Request $request)
+    {
+        $user = auth()->user();
+        $subscriptionName = $request->subscriptionName;
+        if($subscriptionName){
+            $user->subscription($subscriptionName)->resume();
+            return 'subsc is resumed';
+        }
     }
 }
