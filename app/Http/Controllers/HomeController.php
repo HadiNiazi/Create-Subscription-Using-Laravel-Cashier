@@ -38,12 +38,11 @@ class HomeController extends Controller
         $user = auth()->user();
         $user->createOrGetStripeCustomer();
 
+        if ($paymentMethod != null) {
+            $paymentMethod = $user->addPaymentMethod($paymentMethod);
+        }
 
-        $paymentMethod = $user->addPaymentMethod($paymentMethod);
-
-        $user->charge($amount, $paymentMethod->id);
-
-
+        $user->charge($amount, $paymentMethod);
 
         return to_route('home');
     }
